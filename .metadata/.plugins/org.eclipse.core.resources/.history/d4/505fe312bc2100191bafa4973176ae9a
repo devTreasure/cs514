@@ -1,0 +1,10 @@
+
+public class Rook   extends  ChessPiece{
+
+	public Rook(ChessBoard board, Color color) {
+		super(board, color);
+		// TODO Auto-generated constructor stub
+	}
+	
+
+}

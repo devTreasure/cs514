@@ -1,0 +1,7 @@
+import javax.swing.text.Position;
+
+public class IllegalPositionExcelption extends Exception {
+	
+
+
+}

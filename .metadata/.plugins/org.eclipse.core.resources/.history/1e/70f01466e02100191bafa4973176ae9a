@@ -1,0 +1,117 @@
+import java.util.HashMap;
+
+public class ChessBoard  {
+
+  
+   //	TODO
+  private ChessPiece[][] board;
+  
+  //a=0
+  private HashMap<String, Integer> hashmap = new HashMap<>();
+  
+  public ChessBoard()
+  {
+	  this.board = new ChessPiece [8][8];
+	  
+	  hashmap.put("a", 0);
+	  hashmap.put("b", 1);
+	  hashmap.put("c", 2);
+	  hashmap.put("d", 3);
+	  hashmap.put("e", 4);
+	  hashmap.put("f", 5);
+	  hashmap.put("g", 6);
+	  hashmap.put("h", 7);
+  }
+  
+  public void intialize() {
+	  //call contstructor of all pieces
+	
+	  ChessPiece whiteRook = new Rook(null, ChessPiece.Color.WHITE);
+	  this.placePiece(whiteRook, "a4");
+	  
+	  
+  }
+  
+ /*
+  public ChessPieces getPiece(string position) throws IllegalPositionExcelption
+  {
+	  return  
+	  
+  }
+*/
+  
+  
+  public boolean placePiece(ChessPiece piece,String position)
+  {
+	  
+	  String newpos = position.substring(0,1);
+	  
+	  int getIndex= this.hashmap.get(newpos);
+	  
+	  Integer newpos1 = Integer.parseInt(position.substring(1));
+	  
+	  this.board[getIndex][newpos1] = piece;
+	  
+	  return true;
+	  
+  }
+  
+  /*
+  public void move(String fromPosition, String toPosition) throws IllegalMoceException
+  {
+	  
+  }
+  */
+  
+  
+  public String tostring()
+  {
+	  String chess="";
+	    String upperLeft = "\u250C";
+	    String upperRight = "\u2510";
+	    String horizontalLine = "\u2500";
+	    String horizontal3 = horizontalLine + "\u3000" + horizontalLine;
+	    String verticalLine = "\u2502";
+	    String upperT = "\u252C";
+	    String bottomLeft = "\u2514";
+	    String bottomRight = "\u2518";
+	    String bottomT = "\u2534";
+	    String plus = "\u253C";
+	    String leftT = "\u251C";
+	    String rightT = "\u2524";
+
+	    String topLine = upperLeft;
+	    
+	    for (int i = 0; i<7; i++){
+	        topLine += horizontal3 + upperT;
+	    }
+	    topLine += horizontal3 + upperRight;
+
+	    String bottomLine = bottomLeft;
+	    for (int i = 0; i<7; i++){
+	        bottomLine += horizontal3 + bottomT;
+	    }
+	    bottomLine += horizontal3 + bottomRight;
+	    chess+=topLine + "\n";
+
+	    for (int row = 7; row >=0; row--){
+	        String midLine = "";
+	        for (int col = 0; col < 8; col++){
+	            if(board[row][col]==null) {
+	                midLine += verticalLine + " \u3000 ";
+	            } else {midLine += verticalLine + " "+board[row][col]+" ";}
+	        }
+	        midLine += verticalLine;
+	        String midLine2 = leftT;
+	        for (int i = 0; i<7; i++){
+	            midLine2 += horizontal3 + plus;
+	        }
+	        midLine2 += horizontal3 + rightT;
+	        chess+=midLine+ "\n";
+	        if(row>=1)
+	            chess+=midLine2+ "\n";
+  }
+	    
+	    return chess;
+  }
+}

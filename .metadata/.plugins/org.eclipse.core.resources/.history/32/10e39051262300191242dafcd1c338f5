@@ -1,0 +1,21 @@
+import javax.swing.text.Position;
+
+public class IllegalPositionExcelption extends Exception {
+	
+	public static boolean isValidposition(ChessPiece piece,int row, int column)
+	{
+		
+		
+		  int columnIndex= -1;
+		  
+		  int rowIndex = -1;
+		  
+	
+
+		
+	
+		
+		return true;
+	}
+
+}

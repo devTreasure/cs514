@@ -1,0 +1,7 @@
+
+public abstract class ChessPiece {
+	protected ChessBoard board; // the board it belongs to, default null
+	protected int row; // the index of the horizontal rows 0..7
+	protected int column; // the index of the vertical column 0..7
+	protected Color color; // the color of the piece
+}

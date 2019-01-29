@@ -1,0 +1,54 @@
+!SESSION 2019-01-26 14:45:21.876 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-01-26 14:45:48.051
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Bhavin.Parekh'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-01-26 15:38:56.516
+!MESSAGE No repository found at http://apache.mirrors.tds.net/.
+!SESSION 2019-01-28 10:11:26.719 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-01-28 10:11:33.501
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-01-28 10:11:45.496
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Bhavin.Parekh'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-01-28 11:02:23.017
+!MESSAGE No repository found at http://apache.mirrors.tds.net/.
+!SESSION 2019-01-28 13:07:09.128 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-01-28 13:07:46.720
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'H:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-01-28 13:29:00.925
+!MESSAGE No repository found at http://apache.mirrors.tds.net/.

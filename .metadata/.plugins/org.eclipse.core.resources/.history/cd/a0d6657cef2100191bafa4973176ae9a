@@ -1,0 +1,15 @@
+import java.awt.Color;
+
+public class testing {
+
+	public static void main(String[] args) {
+	   ChessBoard board = new ChessBoard();
+		// TODO Auto-generated method stub
+	   board.intialize();
+	   
+	   board.toString();
+		//Rook  r = new Rook(board,Color.white)
+
+	}
+
+}

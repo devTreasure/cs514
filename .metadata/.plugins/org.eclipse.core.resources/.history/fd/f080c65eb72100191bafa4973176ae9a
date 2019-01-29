@@ -1,0 +1,37 @@
+
+public class ChessBoard {
+
+   //	TODO
+ //private ChessPiece[][] board;
+ 
+  public ChessBoard()
+  {
+	  
+  }
+  
+  public void intializ() {
+	  //call contstructor of all pieces
+	  //call placePiece();
+  }
+  
+  /*
+  public ChessPieces getPiece(string position) throws IllegalPositionExcelption
+  {
+	  
+  }
+	*/
+  
+  /*
+  public boolean placePiece(chessPiece piece,String position)
+  {
+	  
+  }*/
+  
+  /*
+  public void move(String fromPosition, String toPosition) throws IllegalMoceException
+  {
+	  
+  }
+  */
+  
+}

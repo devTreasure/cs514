@@ -1,0 +1,16 @@
+
+public class ChessBoard {
+
+   //	TODO
+ //private ChessPiece[][] board;
+ 
+  public ChessBoard()
+  {
+	  
+  }
+  
+  public void intializ() {
+	  
+  }
+
+}

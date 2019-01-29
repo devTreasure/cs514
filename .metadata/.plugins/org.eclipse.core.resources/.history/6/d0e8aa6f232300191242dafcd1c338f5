@@ -1,0 +1,12 @@
+import javax.swing.text.Position;
+
+public class IllegalPositionExcelption extends Exception {
+	
+	public static boolean validposition(String postion)
+	{
+		String rowcol= postion;
+		
+		return true;
+	}
+
+}

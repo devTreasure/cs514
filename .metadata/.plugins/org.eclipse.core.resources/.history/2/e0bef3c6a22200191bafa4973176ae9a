@@ -1,0 +1,9 @@
+
+public class IllegalPositionExcelption extends Exception {
+	
+	public static boolean validposition(String postion)
+	{
+		
+	}
+
+}

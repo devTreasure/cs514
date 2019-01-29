@@ -1,0 +1,20 @@
+
+public class Rook   extends  ChessPiece{
+
+	public Rook(ChessBoard board, Color color) {
+		super(board, color);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		if (this.getColor().equals("White"))
+		  return  "\u2656"; // white rook
+		 else
+		return  "\u265C" ;//  black rook  
+		
+	}
+	
+
+}
