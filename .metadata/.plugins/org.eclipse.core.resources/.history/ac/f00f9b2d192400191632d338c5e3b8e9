@@ -1,0 +1,9 @@
+
+public class Bishop  extends  ChessPiece{
+
+	public Bishop(ChessBoard board, Color color) {
+		super(board, color);
+		// TODO Auto-generated constructor stub
+	}
+
+}

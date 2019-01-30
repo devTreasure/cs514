@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+public class Queen extends ChessPiece {
+
+	public Queen(ChessBoard board, Color color) {
+		super(board, color);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+		   System.out.println("#########################");
+		   System.out.println(this.getColor().toString()); 
+			  if(this.getColor().toString().equals("WHITE"))
+				  return  "\u2655" ;
+			  else
+				  return  "\u265B" ;
+	}
+
+	@Override
+	public ArrayList<String> legalMoves() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

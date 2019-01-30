@@ -12,16 +12,16 @@ public class Rook   extends  ChessPiece{
 	
 			// TODO Auto-generated constructor stub
 	}
-/*
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		if (this.getColor().equals("White"))
-		  return  "\u2656"; // white rook
-		 else
-		return  "\u265C" ;//  black rook  
+	  if(this.getColor().toString().equals("WHITE"))
+		  return  " \u2656"; // white rook
+	  else
+		return  "  \u265C" ;//  black rook  
 		
-	}*/
+	}
 	
 	
 	
@@ -51,7 +51,7 @@ public class Rook   extends  ChessPiece{
 			{
 				
 				//remove hard coding -d
-				moves.add('d' + String.valueOf(row+1) );
+				moves.add(this.board.getRevesreHashmap().get(this.column)  + String.valueOf(row+1) );
 			}
 		 }
 		 
@@ -77,14 +77,14 @@ public class Rook   extends  ChessPiece{
 		return moves;
 	}
 
-
+/*
 	@Override
 	public String toString() {
 		return "Rook [board=" + board + ", row=" + row + "\u2656"+ ", column=" + column + ", color=" + color + "]";
 	}
 
 
-
+*/
 	
 	
 
