@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ChessBoardTest" project="A1" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="ChessBoardTest" incomplete="true" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]">
+    <testcase name="IntiailizechessBoardtest" classname="ChessBoardTest" incomplete="true" displayname="IntiailizechessBoardtest()" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]/[method:IntiailizechessBoardtest()]"/>
+  </testsuite>
+</testrun>

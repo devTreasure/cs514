@@ -60,6 +60,8 @@ public void intialize() throws IllegalPositionExcelption {
 	 
 	 
 	 
+	 
+	 
 	ChessPiece blackKnight= new Knight(this, ChessPiece.Color.BLACK);
 		 
 	boolean validPlacemenblackKnight=  this.placePiece(blackKnight, "b8") ;
@@ -71,13 +73,13 @@ public void intialize() throws IllegalPositionExcelption {
 	boolean validblackbishop=  this.placePiece(blackbishop, "c8") ;
 	
 	
-		
-	
 	ChessPiece blackQueen =new Queen(this, ChessPiece.Color.BLACK);
 	 
 	boolean validblackQueen=  this.placePiece(blackQueen, "d8") ;
 	
+
 	
+		
 	
 	
 	ChessPiece blackKing =new King(this, ChessPiece.Color.BLACK);
@@ -86,31 +88,38 @@ public void intialize() throws IllegalPositionExcelption {
 	
 	
 	
+	
+	
 	ChessPiece blackbishop2 =new Bishop(this, ChessPiece.Color.BLACK);
 	 
 	boolean validblackbishop2=  this.placePiece(blackbishop2, "f8") ;
 	
 	
+
+	 
 	ChessPiece blackKnight2= new Knight(this, ChessPiece.Color.BLACK);
 	 
 	boolean validPlacemenblackKnight2=  this.placePiece(blackKnight2, "g8") ;
 	
+
 	
     ChessPiece blackRook2 = new Rook(this, ChessPiece.Color.BLACK);
 
-	 boolean validPlacementblackRook2=  this.placePiece(blackRook, "h8") ;
+	 boolean validPlacementblackRook2=  this.placePiece(blackRook2, "h8") ;
 	 
 	 
 	 
-	 
-	 /* Placing set  of 8 BLACK  pawns*/
+		
+		
+
 	 
 	 
 	  ChessPiece blackPawn1 = new Pawn(this, ChessPiece.Color.BLACK);
 
 	  boolean ValidblackPawn1=  this.placePiece(blackPawn1, "a7") ;
 	  
-		 
+	
+	  
 		 
 	  ChessPiece blackPawn2 = new Pawn(this, ChessPiece.Color.BLACK);
 
@@ -149,12 +158,9 @@ public void intialize() throws IllegalPositionExcelption {
 	  ChessPiece blackPawn8 = new Pawn(this, ChessPiece.Color.BLACK);
 
 	  boolean ValidblackPawn8=  this.placePiece(blackPawn8, "h7") ;
+	  
 	 
-	/* Placing set  of 8 BLACK  pawns*/
-	  
-	  
-	  
-	 /*---------------------------White *------------------------------------*/
+	/*
 	
 	ChessPiece whiteRook = new Rook(this, ChessPiece.Color.WHITE);
 
@@ -199,8 +205,7 @@ public void intialize() throws IllegalPositionExcelption {
 	 boolean validPlacementWhiteRook2=  this.placePiece(WhiteRook2, "h1") ;
 	
 	
-	
-	 /* Placing set  of 8 WHITE  pawns*/
+
 	 
 	 
 	  ChessPiece whitePawn1 = new Pawn(this, ChessPiece.Color.WHITE);
@@ -246,18 +251,20 @@ public void intialize() throws IllegalPositionExcelption {
 	  ChessPiece whitePawn8 = new Pawn(this, ChessPiece.Color.WHITE);
 
 	  boolean ValidwhitePawn8=  this.placePiece(whitePawn8, "h2") ; 
+	  
+	  
 
-		 
+		 */
 
 	 //ROOK legal moves
-	 
+	 /*
 	System.out.println("--Legal moves--");
 	for( String s  : whiteRook.legalMoves())
 	{
 		System.out.println(s);
 	}
 	System.out.println("--Legal moves--");  
-	  
+	  */
 	 //no two same pieces on the SAME spot
 	// boolean validPlacement1=  this.placePiece(whiteRook, "d8") ;
 	 
@@ -277,11 +284,18 @@ public ChessPiece getPiece(String position) throws IllegalPositionExcelption
   {
       String newpos = position.substring(0,1);
 	  
-	  int getIndex= this.hashmap.get(newpos);
+	  int columnIndex= this.hashmap.get(newpos);
 	  
-	  Integer newpos1 = Character.getNumericValue(position.charAt(position.length() - 1));
+	  Integer rowIndex = Character.getNumericValue(position.charAt(position.length() - 1));
 	  
-	  return this.board[getIndex][newpos1];
+	  rowIndex = rowIndex-1;
+	  
+	  //postion-1  as inputs are from 1 to 8
+	  
+	  System.out.println(columnIndex);
+	  System.out.println(rowIndex);
+	  
+	  return this.board[rowIndex][columnIndex];
 	  
 	  
   }
@@ -294,8 +308,7 @@ public ChessPiece getPiece(String position) throws IllegalPositionExcelption
 	  int columnIndex= -1;	  
 	  int rowIndex = -1;
 	  boolean validPostion=false;
-	  
-	  System.out.println(position.length());
+
 	  
 	  if(position!=null && position.length()==2  && this.hashmap.containsKey(position.substring(0,1)) )
 	  
@@ -328,6 +341,7 @@ public ChessPiece getPiece(String position) throws IllegalPositionExcelption
   
 		  piece.column= columnIndex ;  //rowIndex;
 		  piece.row= rowIndex;        //ColumnIndex;
+		  
 		  this.board[rowIndex][columnIndex] = piece;
 		  validPostion = true;
 	  }

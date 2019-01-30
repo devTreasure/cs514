@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ChessBoardTest" project="A1" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="ChessBoardTest" time="0.0" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]">
+    <testcase name="check_BlackKing8isat_b8" classname="ChessBoardTest" time="0.0" displayname="check_BlackKing8isat_b8()" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]/[method:check_BlackKing8isat_b8()]"/>
+    <testcase name="check_BlackROOK_isat_a8" classname="ChessBoardTest" time="0.0" displayname="check_BlackROOK_isat_a8()" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]/[method:check_BlackROOK_isat_a8()]"/>
+    <testcase name="Boardhasbeenintializedwith2dArrayandcheckthesizingofAnArray" classname="ChessBoardTest" time="0.0" displayname="Boardhasbeenintializedwith2dArrayandcheckthesizingofAnArray()" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]/[method:Boardhasbeenintializedwith2dArrayandcheckthesizingofAnArray()]"/>
+  </testsuite>
+</testrun>

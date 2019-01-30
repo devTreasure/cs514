@@ -6,8 +6,7 @@ public class Rook   extends  ChessPiece{
 
 	public Rook(ChessBoard board, Color color) {
 		super(board, color);
-		this.row=0;
-		this.column=0;
+
 		this.board = board;
 	
 			// TODO Auto-generated constructor stub

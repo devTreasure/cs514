@@ -1,0 +1,34 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import junit.framework.Assert;
+
+class ChessBoardTest { 
+
+	@Test
+	public  void Boardhasbeenintializedwith2dArrayandcheckthesizingofAnArray() throws IllegalPositionExcelption
+	{
+		ChessBoard cb = new ChessBoard();
+		cb.intialize();
+		
+		ChessPiece[][] boardarray=   cb.getBoard();
+		
+		  assertEquals(8, boardarray.length); 
+		  assertEquals(8, boardarray[0].length); 
+	
+	}
+	
+	
+	@Test
+	public void check_BlackROOK_isat_a8() throws IllegalPositionExcelption
+	{
+		ChessBoard cb = new ChessBoard();
+		ChessPiece cp=cb.getPiece("a8");
+		
+		assertEquals(cp.toString().trim(),"\u265C");
+		
+	}
+	
+
+}

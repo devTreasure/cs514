@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ChessBoardTest" project="A1" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="ChessBoardTest" time="0.0" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]">
+    <testcase name="check_Black_ROOK_isat_a8" classname="ChessBoardTest" time="0.0" displayname="check_Black_ROOK_isat_a8()" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]/[method:check_Black_ROOK_isat_a8()]"/>
+    <testcase name="check_Black_Queen_isat_d8" classname="ChessBoardTest" time="0.0" displayname="check_Black_Queen_isat_d8()" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]/[method:check_Black_Queen_isat_d8()]"/>
+    <testcase name="check_Black_Queen_isat_e8" classname="ChessBoardTest" time="0.0" displayname="check_Black_Queen_isat_e8()" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]/[method:check_Black_Queen_isat_e8()]"/>
+    <testcase name="check_Black_Bishop_isat_c8" classname="ChessBoardTest" time="0.0" displayname="check_Black_Bishop_isat_c8()" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]/[method:check_Black_Bishop_isat_c8()]"/>
+    <testcase name="Boardhasbeenintializedwith2dArrayandcheckthesizingofAnArray" classname="ChessBoardTest" time="0.0" displayname="Boardhasbeenintializedwith2dArrayandcheckthesizingofAnArray()" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]/[method:Boardhasbeenintializedwith2dArrayandcheckthesizingofAnArray()]"/>
+    <testcase name="check_Black_Bishop2_isat_f8" classname="ChessBoardTest" time="0.0" displayname="check_Black_Bishop2_isat_f8()" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]/[method:check_Black_Bishop2_isat_f8()]"/>
+    <testcase name="check_Black_Knight_isat_b8" classname="ChessBoardTest" time="0.0" displayname="check_Black_Knight_isat_b8()" uniqueid="[engine:junit-jupiter]/[class:ChessBoardTest]/[method:check_Black_Knight_isat_b8()]"/>
+  </testsuite>
+</testrun>

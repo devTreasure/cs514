@@ -1,0 +1,212 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.io.Console;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
+
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import junit.framework.Assert;
+
+class ChessBoardTest { 
+	
+	
+	public ChessBoard cb= new ChessBoard();
+	
+	/*
+	
+	@Before
+	@Test
+	public void test() throws IllegalPositionExcelption
+	{
+		this.cb.intialize();
+		System.out.println("Before");
+	}
+
+		*/
+	
+	@Test
+	public  void Boardhasbeenintializedwith2dArrayandcheckthesizingofAnArray() throws IllegalPositionExcelption
+	{
+		
+		/*
+		ChessBoard cb = new ChessBoard();
+		cb.intialize();
+		*/
+
+		
+		ChessPiece[][] boardarray=   cb.getBoard();
+		assertEquals(8, boardarray.length); 
+		assertEquals(8, boardarray[0].length); 
+	
+	}
+	
+	
+	@Test
+	public void check_Black_ROOK_isat_a8() throws IllegalPositionExcelption, UnsupportedEncodingException
+	{
+		
+		ChessBoard cb = new ChessBoard();
+		cb.intialize();
+		
+	
+		
+		ChessPiece cp= cb.getPiece("a8");
+		System.out.println(cp.toString());
+		System.out.println(cp.column);
+		System.out.println(cp.row);
+		assertEquals(cp.column,0);
+		assertEquals(cp.row, 7);		
+	}
+	
+
+	
+	@Test
+	public void check_Black_Knight_isat_b8() throws IllegalPositionExcelption, UnsupportedEncodingException
+	{
+		
+		ChessBoard cb = new ChessBoard();
+		cb.intialize();
+		
+	
+		
+		ChessPiece cp= cb.getPiece("b8");
+		System.out.println(cp.toString());
+		System.out.println(cp.column);
+		System.out.println(cp.row);
+		assertEquals(cp.column,1);
+		assertEquals(cp.row, 7);		
+	}
+	
+	
+	@Test
+	public void check_Black_Bishop_isat_c8() throws IllegalPositionExcelption, UnsupportedEncodingException
+	{
+		
+		ChessBoard cb = new ChessBoard();
+		cb.intialize();
+		
+	
+		
+		ChessPiece cp= cb.getPiece("c8");
+		System.out.println(cp.toString());
+		System.out.println(cp.column);
+		System.out.println(cp.row);
+		assertEquals(cp.column,2);
+		assertEquals(cp.row, 7);		
+	}
+	
+	
+	@Test
+	public void check_Black_Queen_isat_d8() throws IllegalPositionExcelption, UnsupportedEncodingException
+	{
+		
+		ChessBoard cb = new ChessBoard();
+		cb.intialize();
+		
+	
+		
+		ChessPiece cp= cb.getPiece("d8");
+		System.out.println(cp.toString());
+		System.out.println(cp.column);
+		System.out.println(cp.row);
+		assertEquals(cp.column,3);
+		assertEquals(cp.row, 7);		
+	}
+	
+	
+	@Test
+	public void check_Black_Queen_isat_e8() throws IllegalPositionExcelption, UnsupportedEncodingException
+	{
+		
+		ChessBoard cb = new ChessBoard();
+		cb.intialize();
+		
+	
+		
+		ChessPiece cp= cb.getPiece("e8");
+		System.out.println(cp.toString());
+		System.out.println(cp.column);
+		System.out.println(cp.row);
+		assertEquals(cp.column,4);
+		assertEquals(cp.row, 7);		
+	}
+	
+	
+	
+	@Test
+	public void check_Black_Bishop2_isat_f8() throws IllegalPositionExcelption, UnsupportedEncodingException
+	{
+		
+		ChessBoard cb = new ChessBoard();
+		cb.intialize();
+		
+	
+		
+		ChessPiece cp= cb.getPiece("f8");
+		System.out.println(cp.toString());
+		System.out.println(cp.column);
+		System.out.println(cp.row);
+		assertEquals(cp.column,5);
+		assertEquals(cp.row, 7);		
+	}
+	
+	
+	
+	@Test
+	public void check_Black_Knoght2_isat_g8() throws IllegalPositionExcelption, UnsupportedEncodingException
+	{
+		
+		ChessBoard cb = new ChessBoard();
+		cb.intialize();
+		
+	
+		
+		ChessPiece cp= cb.getPiece("g8");
+		System.out.println(cp.toString());
+		System.out.println(cp.column);
+		System.out.println(cp.row);
+		assertEquals(cp.column,6);
+		assertEquals(cp.row, 7);		
+	}
+	
+	
+	@Test
+	public void check_Black_ROOK2_isat_h8() throws IllegalPositionExcelption, UnsupportedEncodingException
+	{
+		
+		ChessBoard cb = new ChessBoard();
+		cb.intialize();
+		
+	
+		
+		ChessPiece cp= cb.getPiece("h8");
+		System.out.println(cp.toString());
+		System.out.println(cp.column);
+		System.out.println(cp.row);
+		assertEquals(cp.column,7);
+		assertEquals(cp.row, 7);		
+	}
+	
+	
+	@Test
+	public void check_Black_Pawn1_isat_a7() throws IllegalPositionExcelption, UnsupportedEncodingException
+	{
+		
+		ChessBoard cb = new ChessBoard();
+		cb.intialize();
+		
+	
+		
+		ChessPiece cp= cb.getPiece("h8");
+		System.out.println(cp.toString());
+		System.out.println(cp.column);
+		System.out.println(cp.row);
+		assertEquals(cp.column,7);
+		assertEquals(cp.row, 7);		
+	}
+	
+}

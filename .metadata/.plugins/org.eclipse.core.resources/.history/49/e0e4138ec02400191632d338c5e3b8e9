@@ -1,0 +1,40 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.io.Console;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
+
+import org.junit.jupiter.api.Test;
+
+import junit.framework.Assert;
+
+class ChessBoardTest { 
+	
+	ChessBoard cb= null;
+
+	@Test
+	public  void Boardhasbeenintializedwith2dArrayandcheckthesizingofAnArray() throws IllegalPositionExcelption
+	{
+		ChessBoard cb = new ChessBoard();
+		cb.intialize();
+		
+		ChessPiece[][] boardarray=   cb.getBoard();
+		
+		  assertEquals(8, boardarray.length); 
+		  assertEquals(8, boardarray[0].length); 
+	
+	}
+	
+	
+	@Test
+	public void check_BlackROOK_isat_a8() throws IllegalPositionExcelption, UnsupportedEncodingException
+	{
+		ChessBoard cb = new ChessBoard();
+		cb.intialize();
+		ChessPiece cp=cb.getPiece("a8");
+	 	assertEquals(cp.toString().trim(),   "\u2656");
+		
+	}
+	
+
+}

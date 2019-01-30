@@ -1,0 +1,17 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ChessBoardTest { 
+
+	@Test
+	public static void IntiailizechessBoardtest()
+	{
+		ChessBoard cb = new ChessBoard();
+		ChessPiece[][] boardarray=   cb.getBoard();
+		
+		  assertEquals(8, boardarray.length); 
+	
+	}
+
+}

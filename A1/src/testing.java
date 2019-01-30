@@ -8,7 +8,7 @@ public class testing {
 		// TODO Auto-generated method stub
 	   board.intialize();
 	   
-	 System.out.println( board.toString());
+	  System.out.println( board.toString());
 		//Rook  r = new Rook(board,Color.white)
 	   
 	 //  StringHelper.getRowColumn("d8");  //rook 
